@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Task Manager</h1>
+
+
+  <h2>Add New Task</h2>
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Title" required><br><br>
+    <input type="text" id="description" placeholder="Description"><br><br>
+    <select id="status">
+      <option value="to_do">To Do</option>
+      <option value="in_progress">In Progress</option>
+      <option value="done">Done</option>
+    </select><br><br>
+    <input type="number" id="userId" placeholder="Assigned User ID"><br><br>
+    <input type="number" id="projectId" placeholder="Project ID"><br><br>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <div style="margin-top: 30px;">
+    <a href="tasks.html" class="button">Display Task List</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
